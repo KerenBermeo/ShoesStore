@@ -1,4 +1,6 @@
 package com.shoesstore.app.models;
+import java.math.BigDecimal;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -8,17 +10,9 @@ public class Product {
     private int id;
     private String name;
     private String description;
-    private String price;
-    private String ref_img;
-    private User id_user;
-
-    public Product(User user_id) {
-        this.id_user = user_id;
-    }
-
-    public User getUser_id() {
-        return id_user;
-    }
+    private BigDecimal price;
+    private String refImg;
+    private int userId;
 }
 
 

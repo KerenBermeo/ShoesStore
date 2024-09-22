@@ -1,8 +1,11 @@
 package com.shoesstore.app.models;
 
-public enum Rol {
-    SUPERADMIN,
-    ADMIN,
-    CLIENTE,
-    ANONIMO;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Rol {
+    private int id;
+    private String rolName;
 }
